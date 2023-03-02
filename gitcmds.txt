@@ -48,4 +48,4 @@ commands
 -git rm --cached filename  (it will untrack the file)
 -git restore --staged filename.ext (to unstage the file)
 -git checkout -- filename.ext 	("v.impp cmd" -to unmodify the file)
--git checkout -f 	 (it will come back to last changed commit)
+-git checkout -f 	 (it will come back to (all like 10 files)last changed commit)
