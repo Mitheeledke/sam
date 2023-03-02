@@ -1,0 +1,51 @@
+git preparation         (notepad++ install in other video it 
+				is used without use of vi editor) notepad++ .bash_profile 
+				alias npp="notepad++.exe -multiInst -nosession"-->shortcut for writing notepad++
+				we keep any name other than npp
+
+commands
+
+-pwd		(present working directory)
+-ls		(list content)
+-ls -al    (to see hidden .git folder)
+-git config --global user.name "sam"
+-git config --global --list
+-git config --global -e  (moving into the VI editor)
+-git config --global alias.our_own_name cmd_name
+-git status   (gives the status of ur repository)
+-git init     (for creating git repository)
+-git clone repository_Url (copying)
+-git clone repository_Url folder_name		(for giving ur own floder name)
+-git add --a	(all files add into the staging area)
+-git commit -m "something..."	(commit the files and '-m' used to msg what is changed)
+-git add filename.extension	(to add one file in staging area)
+-git log			(to see what changes done)
+-git log --p
+-git log --stat
+-git log --since=n.days/months/years  	(n=1,2,3....)
+-git log --pretty=oneline
+-git log --pretty=format:"%h -- %an" (u can search in online)
+-git remote add origin repos_URL	  (linking server to our local system)
+-git push ('-u'=optional) origin master  (to push into remote github)
+-rm -rf .git  	(all floder content with repository will be deleted)
+-rm -rf foldername	(removing specific folder)
+-vi filename.ext		(if we want modify the file after commiting)
+-In vi editor press "i" to insert then "esc" to save the":wq" to come out of editor.
+-.gitignore   	(ignoring the file, ex:if u don't need .test files then u type file 
+                 name / *.test in the .git ignore file.
+			And for folder use "folder_name/")
+-!file.extension 	(except this file other files will be ignored)
+-touch filename 		(generate blank file)
+-/foldername/  		(it ignores only outer folder but not inside another folder)
+-git diff   		(compare working directory from the staging area) 
+-git diff --staged    (compare last commit with present staging area)
+-git commit -a -m "msg..."  ( only tracked file will be directly commited without using 
+						staging cmds)
+=git commit --amend	  (changing )
+-git commit -v 		  (commit with some info of what changes done to file)
+-git rm filename.ext 	  (it used to remove file and automatically staged)
+-git mv old_filename.ext new_filename.ext 	(it will rename the filename and staged)
+-git rm --cached filename  (it will untrack the file)
+-git restore --staged filename.ext (to unstage the file)
+-git checkout -- filename.ext 	("v.impp cmd" -to unmodify the file)
+-git checkout -f 	 (it will come back to last changed commit)
